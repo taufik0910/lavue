@@ -6,8 +6,8 @@ body {
     margin: 0;
     font-size: 14px;
     font-family: helvetica;
-    background: rgb(95, 168, 104);
-    color: #4e9e3e;
+    background: rgb(235, 238, 243);
+    color: #616161;
 }
 
 a {
@@ -25,14 +25,14 @@ img {
 }
 
 .navbar {
-	background: rgb(206, 204, 230);
+	background: #fff;
   	padding: 15px 25px;
    	box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
    	display: flex;
    	justify-content: space-between;
    	align-items: center;
    	&__brand a {
-        color: rgb(24, 24, 26);
+        color: #E91E63;
         font-weight: bold;
     }
     &__list {
@@ -41,16 +41,13 @@ img {
     }
     &__item {
     	display: inline;
-        margin-left: 25px;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        
+    	margin-left: 25px;
     }
 }
 
 .form {
-	background: rgb(255, 255, 255);
-    box-shadow: rgba(56, 173, 52, 0.09) 0 1px 0;
+	background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
     width: 30%;
     margin: 30px auto;
     padding: 15px;
@@ -72,7 +69,7 @@ img {
 	    outline: none;
 	    padding: 8px;
 	    &:focus {
-	        background: rgba(180, 191, 196, 0.31);
+	        background: rgba(225, 245, 254, 0.31);
 	    }
 	}
     &__qty {
@@ -90,7 +87,7 @@ img {
 .btn {
     border: none;
     border-radius: 3px;
-    font-size: 15px;
+    font-size: 13px;
     height: 30px;
     padding: 8px 16px;
     position: relative;
@@ -99,7 +96,7 @@ img {
     cursor: pointer;
     background: #f4f4f4;
     color: #484746;
-    box-shadow: 0 1px darken(#4b49ce, 13%);
+    box-shadow: 0 1px darken(#f4f4f4, 13%);
     outline: none;
     text-decoration: none;
     display: inline-block;
@@ -112,9 +109,9 @@ img {
         cursor: not-allowed;
     }
     &__primary {
-    	background: #b5daf0;
+    	background: #3aa3e3;
     	color: #fff;
-    	box-shadow: 0 1px darken(#5e727e, 13%);
+    	box-shadow: 0 1px darken(#3aa3e3, 13%);
     }
     &__danger {
         background: #E75650;

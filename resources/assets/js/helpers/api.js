@@ -3,8 +3,8 @@
  export function post(url, data) {
 
     return axios({
-        method: 'POST'
-        url:url,
+        method: 'POST',
+        url: url,
         data: data
     })
      

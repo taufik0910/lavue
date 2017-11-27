@@ -55,12 +55,16 @@ export default {
 
           this.isProcessing =true
           this.error= {}
-
-          post('/api/register',this.form)
+    post('/api/register',this.form)
           .then((res)=>{
 
+              if(res.data.registered){
+                  this.$router.push('/login')
+              }
+              this.isProcessing = false
+
           })
-          .catch((err)=>{
+          .catch((err)=> {
               if(err.response.status === 422){
                   this.error = err.response.data
               }
