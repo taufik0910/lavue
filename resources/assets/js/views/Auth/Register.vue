@@ -35,6 +35,9 @@
 </template>
 
 <script type= "text/javascript">
+
+import {post} from ''
+
 export default {
   
   data() {
