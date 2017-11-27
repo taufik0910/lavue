@@ -36,7 +36,7 @@
 
 <script type= "text/javascript">
 
-import {post} from ''
+import {post} from '../../helpers/api'
 
 export default {
   
@@ -52,6 +52,21 @@ export default {
 
   methods:{
       register(){
+
+          this.isProcessing =true
+          this.error= {}
+
+          post('/api/register',this.form)
+          .then((res)=>{
+
+          })
+          .catch((err)=>{
+              if(err.response.status === 422){
+                  this.error = err.response.data
+              }
+
+              this.isProcessing = false
+          })
 
           
       }

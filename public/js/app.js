@@ -70,7 +70,8 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-throw new Error("Cannot find module \"\"");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__helpers_api__ = __webpack_require__("./resources/assets/js/helpers/api.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__helpers_api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__helpers_api__);
 //
 //
 //
@@ -124,7 +125,20 @@ throw new Error("Cannot find module \"\"");
 
 
     methods: {
-        register: function register() {}
+        register: function register() {
+            var _this = this;
+
+            this.isProcessing = true;
+            this.error = {};
+
+            Object(__WEBPACK_IMPORTED_MODULE_0__helpers_api__["post"])('/api/register', this.form).then(function (res) {}).catch(function (err) {
+                if (err.response.status === 422) {
+                    _this.error = err.response.data;
+                }
+
+                _this.isProcessing = false;
+            });
+        }
     }
 
 });
@@ -14351,6 +14365,13 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 	components: { App: __WEBPACK_IMPORTED_MODULE_1__App_vue___default.a },
 	router: __WEBPACK_IMPORTED_MODULE_2__router__["a" /* default */]
 });
+
+/***/ }),
+
+/***/ "./resources/assets/js/helpers/api.js":
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: SyntaxError: Unexpected token, expected , (7:8)\n\n\u001b[0m \u001b[90m  5 | \u001b[39m    \u001b[36mreturn\u001b[39m axios({\n \u001b[90m  6 | \u001b[39m        method\u001b[33m:\u001b[39m \u001b[32m'POST'\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 | \u001b[39m        url\u001b[33m:\u001b[39murl\u001b[33m,\u001b[39m\n \u001b[90m    | \u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 | \u001b[39m        data\u001b[33m:\u001b[39m data\n \u001b[90m  9 | \u001b[39m    })\n \u001b[90m 10 | \u001b[39m     \u001b[0m\n");
 
 /***/ }),
 
