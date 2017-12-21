@@ -7,8 +7,8 @@ body {
   margin: 0;
   font-size: 14px;
   font-family: helvetica;
-  background: #5fa868;
-  color: #4e9e3e;
+  background: #ebeef3;
+  color: #616161;
 }
 
 a {
@@ -26,7 +26,7 @@ img {
 }
 
 .navbar {
-  background: #cecce6;
+  background: #fff;
   padding: 15px 25px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
           box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
@@ -42,7 +42,7 @@ img {
 }
 
 .navbar__brand a {
-  color: #18181a;
+  color: #E91E63;
   font-weight: bold;
 }
 
@@ -54,14 +54,12 @@ img {
 .navbar__item {
   display: inline;
   margin-left: 25px;
-  color: black;
-  font-weight: bold;
 }
 
 .form {
-  background: white;
-  -webkit-box-shadow: rgba(56, 173, 52, 0.09) 0 1px 0;
-          box-shadow: rgba(56, 173, 52, 0.09) 0 1px 0;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+          box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
   width: 30%;
   margin: 30px auto;
   padding: 15px;
@@ -90,7 +88,7 @@ img {
 }
 
 .form__control:focus {
-  background: rgba(180, 191, 196, 0.31);
+  background: rgba(225, 245, 254, 0.31);
 }
 
 .form__qty {
@@ -109,7 +107,7 @@ img {
 .btn {
   border: none;
   border-radius: 3px;
-  font-size: 15px;
+  font-size: 13px;
   height: 30px;
   padding: 8px 16px;
   position: relative;
@@ -118,8 +116,8 @@ img {
   cursor: pointer;
   background: #f4f4f4;
   color: #484746;
-  -webkit-box-shadow: 0 1px #2f2da8;
-          box-shadow: 0 1px #2f2da8;
+  -webkit-box-shadow: 0 1px lightgray;
+          box-shadow: 0 1px lightgray;
   outline: none;
   text-decoration: none;
   display: inline-block;
@@ -137,10 +135,10 @@ img {
 }
 
 .btn__primary {
-  background: #b5daf0;
+  background: #3aa3e3;
   color: #fff;
-  -webkit-box-shadow: 0 1px #425058;
-          box-shadow: 0 1px #425058;
+  -webkit-box-shadow: 0 1px #1b81bf;
+          box-shadow: 0 1px #1b81bf;
 }
 
 .btn__danger {
